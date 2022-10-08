@@ -1,0 +1,33 @@
+
+# === Frequent emoji ===
+# ✨ :sparkles: 機能追加
+# 🎨 :art: 見た目やふるまいの変更
+# ♻️ :recycle: リファクタリング
+# 🐛 :bug: バグ修正
+# 🧹 :broom: 削除
+# 💥 :boom: 破壊的変更
+
+# === Emoji ===
+# 🆙 :up: 依存関係
+# 🏝️ :desert_island: 環境整備や開発体験向上のための取り組み
+# 📖 :book: ドキュメント
+# 📝 :memo: コメント
+# 🎉 :tada: 初めてのコミットやサンプルからのコピー
+
+# === Format ===
+# :emoji: Subject
+#
+# Body...
+
+# Usage
+# For Local
+# git config commit.template .gitmessage
+# For Global
+# git config --global commit.template .gitmessage
+
+#####
+# Copyright (c) 2022 mirko-san
+
+# This code snippet is released under the MIT License.
+# http://opensource.org/licenses/mit-license.php
+#####
