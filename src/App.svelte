@@ -4,23 +4,13 @@
 
 <main>
   <div>
-    <MClock />
+    <MClock
+      time-format="HH:mm:ss"
+      zone-string="Asia/Tokyo"
+      date-format="MM/dd E"
+      date-color="#111827"
+      zone-color="#111827"
+      time-color="#111827"
+    />
   </div>
 </main>
-
-<style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  }
-</style>
