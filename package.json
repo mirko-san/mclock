@@ -1,8 +1,12 @@
 {
-  "name": "portfolio-mirko-web-components",
-  "private": true,
-  "version": "0.0.0",
+  "name": "mclock",
+  "version": "0.0.2",
+  "description": "It is stylish clock of Web Components. Use Svelte.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "mirko-san/mclock"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -22,5 +26,12 @@
   "dependencies": {
     "date-fns": "^2.29.3",
     "twind": "^0.16.17"
-  }
+  },
+  "main": "dist/m-clock.umd.js",
+  "module": "dist/m-clock.es.js",
+  "unpkg": "dist/m-clock.umd.js",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT"
 }
