@@ -24,6 +24,7 @@
     "vite": "^3.1.0"
   },
   "dependencies": {
+    "colord": "^2.9.3",
     "date-fns": "^2.29.3",
     "twind": "^0.16.17"
   },
