@@ -1,5 +1,3 @@
-<svelte:options tag="m-clock" />
-
 <script lang="ts">
   import { onMount, onDestroy } from "svelte";
   import { tw } from 'twind'
