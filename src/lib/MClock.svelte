@@ -2,10 +2,16 @@
   import { onMount, onDestroy } from "svelte";
   import { tw } from 'twind'
   import { formatISO, format, parseISO } from 'date-fns'
+  import { colord } from 'colord';
 
   const timeFormat = $$props['time-format'];
   const zoneString = $$props['zone-string'];
   const dateFormat = $$props['date-format'];
+
+  const bgColor = $$props['bg-color'];
+  const bgOpacity = $$props['bg-opacity'];
+  const internalBgColor = colord(bgColor).alpha(Number.parseFloat(bgOpacity));
+  const internalBgColorStr = internalBgColor.toRgbString().replace(/ /g, '');
 
   const dateColor = $$props['date-color'];
   const zoneColor = $$props['zone-color'];
@@ -30,7 +36,7 @@
 </script>
 
 <div class="m-container">
-  <div class={tw`inline-block m-8 px-6 pt-4 pb-6 rounded tracking-widest`}>
+  <div class={tw`inline-block m-8 px-6 pt-4 pb-6 bg-[${internalBgColorStr}] rounded tracking-widest`}>
     <div class={tw`flex items-center mb-1`}>
       <div class={tw`text-xl text-[${dateColor}]`}>
         <span class="m-date">{dateString}</span>
