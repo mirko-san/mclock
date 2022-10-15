@@ -1,8 +1,17 @@
+<svelte:options tag="m-clock" />
+
 <script lang="ts">
   import { onMount, onDestroy } from "svelte";
-  import { tw } from 'twind'
+  import { create, cssomSheet } from 'twind'
   import { formatISO, format, parseISO } from 'date-fns'
   import { colord } from 'colord';
+
+  const sheet = cssomSheet({ target: new CSSStyleSheet() });
+
+  const { tw } = create({ sheet });
+
+  const element = document.getElementById('m-clock');
+  element.shadowRoot.adoptedStyleSheets = [sheet.target];
 
   const timeFormat = $$props['time-format'];
   const zoneString = $$props['zone-string'];
