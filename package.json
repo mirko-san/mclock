@@ -1,6 +1,6 @@
 {
   "name": "mclock",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "It is stylish clock of Web Components. Use Svelte.",
   "type": "module",
   "repository": {
