@@ -1,4 +1,4 @@
-<svelte:options tag="m-clock" />
+<svelte:options customElement="m-clock" />
 
 <script lang="ts">
   import { onMount, onDestroy } from 'svelte';
