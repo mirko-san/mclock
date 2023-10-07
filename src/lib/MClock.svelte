@@ -1,17 +1,20 @@
 <svelte:options tag="m-clock" />
 
 <script lang="ts">
-  import { onMount, onDestroy } from "svelte";
-  import { create, cssomSheet } from 'twind'
-  import { formatISO, format, parseISO } from 'date-fns'
+  import { onMount, onDestroy } from 'svelte';
+  import { twind, cssom, observe } from '@twind/core';
+  import config from '../../twind.config';
+  import { formatISO, format, parseISO } from 'date-fns';
   import { colord } from 'colord';
 
-  const sheet = cssomSheet({ target: new CSSStyleSheet() });
+  const sheet = cssom(new CSSStyleSheet());
 
-  const { tw } = create({ sheet });
+  const tw = twind(config, sheet);
 
-  const element = document.getElementById('m-clock');
-  element.shadowRoot.adoptedStyleSheets = [sheet.target];
+  const shadowRoot = document.getElementById('m-clock').shadowRoot;
+  shadowRoot.adoptedStyleSheets = [sheet.target];
+
+  observe(tw, shadowRoot);
 
   const timeFormat = $$props['time-format'];
   const zoneString = $$props['zone-string'];
@@ -45,18 +48,20 @@
 </script>
 
 <div class="m-container">
-  <div class={tw`inline-block m-8 px-6 pt-4 pb-6 bg-[${internalBgColorStr}] rounded tracking-widest`}>
-    <div class={tw`flex items-center mb-1`}>
-      <div class={tw`text-xl text-[${dateColor}]`}>
+  <div
+    class={`inline-block m-8 px-6 pt-4 pb-6 bg-[${internalBgColorStr}] rounded tracking-widest`}
+  >
+    <div class="flex items-center mb-1">
+      <div class={`text-xl text-[${dateColor}]`}>
         <span class="m-date">{dateString}</span>
       </div>
-      <div class={tw`ml-4 text-sm text-[${zoneColor}]`}>
+      <div class={`ml-4 text-sm text-[${zoneColor}]`}>
         <span class="m-zone">( {zoneString} )</span>
       </div>
     </div>
 
-    <div class={tw`text-[${timeColor}] text-6xl align-middle`}>
+    <div class={`text-[${timeColor}] text-6xl align-middle`}>
       <span class="m-time">{timeString}</span>
-    </div >
+    </div>
   </div>
 </div>
