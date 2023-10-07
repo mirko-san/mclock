@@ -1,0 +1,45 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "nodejs@latest": {
+      "last_modified": "2023-09-29T17:45:58Z",
+      "resolved": "github:NixOS/nixpkgs/c182df2e68bd97deb32c7e4765adfbbbcaf75b60#nodejs_20",
+      "source": "devbox-search",
+      "version": "20.8.0",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/cwl9zcngdc1b9dqgn1p23qbnj37mza6p-nodejs-20.8.0"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/cf141wabmcpx2ib2wdqcjbjrg9568xz0-nodejs-20.8.0"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/la42z3d436pb6apd14qpplmp5ka3xvg1-nodejs-20.8.0"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/qs5b5msb3jj13140k7ffqx39bphanghg-nodejs-20.8.0"
+        }
+      }
+    },
+    "yarn@latest": {
+      "last_modified": "2023-09-27T18:02:17Z",
+      "resolved": "github:NixOS/nixpkgs/517501bcf14ae6ec47efd6a17dda0ca8e6d866f9#yarn",
+      "source": "devbox-search",
+      "version": "1.22.19",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/bgskrpwr2mhjz8iaiwffqm3yp513dp50-yarn-1.22.19"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/lvnq6659c1ll4h0zpbjp6syqm5szhjsp-yarn-1.22.19"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/1i5grwcqqxiaid655ba6a59j46p642ix-yarn-1.22.19"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/i2d711xk76lzfd817wrg76czlljq2yjv-yarn-1.22.19"
+        }
+      }
+    }
+  }
+}
