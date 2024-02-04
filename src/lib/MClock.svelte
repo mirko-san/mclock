@@ -52,15 +52,15 @@
     class={`inline-block m-8 px-6 pt-4 pb-6 bg-[${internalBgColorStr}] rounded tracking-widest`}
   >
     <div class="flex items-center mb-1">
-      <div class={`text-xl text-[${dateColor}]`}>
+      <div class={`text-6xl text-[${dateColor}]`}>
         <span class="m-date">{dateString}</span>
       </div>
-      <div class={`ml-4 text-sm text-[${zoneColor}]`}>
+      <div class={`ml-4 text-2xl text-[${zoneColor}]`}>
         <span class="m-zone">( {zoneString} )</span>
       </div>
     </div>
 
-    <div class={`text-[${timeColor}] text-6xl align-middle`}>
+    <div class={`text-[${timeColor}] text-9xl align-middle`}>
       <span class="m-time">{timeString}</span>
     </div>
   </div>
