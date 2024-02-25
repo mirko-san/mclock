@@ -30,7 +30,7 @@ OBS Studio のソースに https://mclock.vercel.app/ を指定。
       time-color="#ffffff"
     ></m-clock>
 
-    <script src="https://unpkg.com/mclock/dist/m-clock.umd.js@2.0.0"></script>
+    <script src="https://unpkg.com/mclock@2.0.0/dist/m-clock.umd.js"></script>
   </body>
 </html>
 ```
