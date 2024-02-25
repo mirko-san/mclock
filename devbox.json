@@ -1,6 +1,6 @@
 {
   "packages": [
-    "yarn@latest",
+    "yarn-berry",
     "nodejs@20"
   ],
   "shell": {
