@@ -9,12 +9,6 @@ const withTwind = install(config)
 import { formatISO, format, parseISO } from 'date-fns';
 import { colord } from 'colord';
 
-/**
- * An example element.
- *
- * @slot - This element has a slot
- * @csspart button - The button
- */
 @customElement('m-clock')
 @withTwind
 export class MClock extends LitElement {
