@@ -10,7 +10,7 @@ OBS Studio のソースに https://mclock.vercel.app/ を指定。
 もしくは、以下のように Web Components として利用。
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
