@@ -34,3 +34,24 @@ OBS Studio のソースに https://mclock.vercel.app/ を指定。
   </body>
 </html>
 ```
+
+## For me
+
+### Develop
+
+```shellsession
+# port 3080
+$ yarn dev
+```
+
+```shellsession
+# port 3081
+$ yarn storybook
+```
+
+### Publish npm
+
+```shellsession
+$ npm login
+$ npm publish
+```
