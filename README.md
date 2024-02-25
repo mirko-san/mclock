@@ -23,12 +23,14 @@ OBS Studio のソースに https://mclock.vercel.app/ を指定。
       time-format="HH:mm:ss"
       zone-string="Asia/Tokyo"
       date-format="MM/dd E"
-      date-color="#111827"
-      zone-color="#111827"
-      time-color="#111827"
+      bg-color="#000000"
+      bg-opacity="0.2"
+      date-color="#ffffff"
+      zone-color="#ffffff"
+      time-color="#ffffff"
     ></m-clock>
 
-    <script src="https://unpkg.com/mclock/dist/m-clock.umd.js"></script>
+    <script src="https://unpkg.com/mclock/dist/m-clock.umd.js@2.0.0"></script>
   </body>
 </html>
 ```

@@ -1,11 +1,11 @@
 {
   "name": "mclock",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "It is stylish clock of Web Components. Use Svelte.",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "mirko-san/mclock"
+    "url": "git+https://github.com/mirko-san/mclock.git"
   },
   "scripts": {
     "dev": "vite --host",
