@@ -31,5 +31,6 @@
   "files": [
     "dist"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "yarn@3.4.1"
 }

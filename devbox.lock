@@ -21,25 +21,9 @@
         }
       }
     },
-    "yarn@latest": {
-      "last_modified": "2023-09-27T18:02:17Z",
-      "resolved": "github:NixOS/nixpkgs/517501bcf14ae6ec47efd6a17dda0ca8e6d866f9#yarn",
-      "source": "devbox-search",
-      "version": "1.22.19",
-      "systems": {
-        "aarch64-darwin": {
-          "store_path": "/nix/store/bgskrpwr2mhjz8iaiwffqm3yp513dp50-yarn-1.22.19"
-        },
-        "aarch64-linux": {
-          "store_path": "/nix/store/lvnq6659c1ll4h0zpbjp6syqm5szhjsp-yarn-1.22.19"
-        },
-        "x86_64-darwin": {
-          "store_path": "/nix/store/1i5grwcqqxiaid655ba6a59j46p642ix-yarn-1.22.19"
-        },
-        "x86_64-linux": {
-          "store_path": "/nix/store/i2d711xk76lzfd817wrg76czlljq2yjv-yarn-1.22.19"
-        }
-      }
+    "yarn-berry": {
+      "resolved": "github:NixOS/nixpkgs/75a52265bda7fd25e06e3a67dee3f0354e73243c#yarn-berry",
+      "source": "nixpkg"
     }
   }
 }
