@@ -1,6 +1,6 @@
 # mclock
 
-It is stylish clock of Web Components. Use Svelte.  
+It is stylish clock of Web Components. Use Lit.  
 動画や配信のときに便利な、時刻表示コンポーネントです。
 
 ## 使い方
