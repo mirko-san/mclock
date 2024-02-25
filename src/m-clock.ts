@@ -37,7 +37,7 @@ export class MClock extends LitElement {
   dateString: string;
 
   @property({ attribute: false })
-  interval?: number;
+  interval?: any;
 
   @property({ attribute: false })
   _BgColorStr?:string;
