@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "vite --host",
+    "fmt": "prettier src README.md --write",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "storybook dev -p 3081"
@@ -34,7 +35,8 @@
     "@twind/with-web-components": "^1.1.3",
     "colord": "^2.9.3",
     "date-fns": "^3.3.1",
-    "lit": "^3.1.2"
+    "lit": "^3.1.2",
+    "prettier": "^3.2.5"
   },
   "main": "dist/m-clock.umd.js",
   "module": "dist/m-clock.es.js",
@@ -42,6 +44,5 @@
   "files": [
     "dist"
   ],
-  "license": "MIT",
-  "packageManager": "yarn@3.4.1"
+  "license": "MIT"
 }
